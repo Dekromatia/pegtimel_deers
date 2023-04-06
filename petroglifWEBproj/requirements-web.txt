@@ -1,0 +1,4 @@
+flask
+requests
+folium
+jinja2
