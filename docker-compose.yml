@@ -8,17 +8,12 @@ services:
       dockerfile: Dockerfile.web
     ports:
       - 5000:5000
-    # networks_aliases:
-    #   - web-app
-    # networks:
-    #   - frontend_network
 
   pixplot:
     container_name: viz-app
     build:
       context: ./pixplot/
       dockerfile: Dockerfile
-    # command: bash -c "cd . && python3.6 utils/process_images.py './data/images/*'"
     ports:
       - 4000:4000
     # networks_aliases:

@@ -2,3 +2,4 @@ flask
 requests
 folium
 jinja2
+# matplotlib
