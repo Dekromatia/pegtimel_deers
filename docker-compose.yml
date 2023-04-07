@@ -30,5 +30,5 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf
       - ./petroglifWEBproj/static:/usr/share/nginx/html/static
       - ./petroglifWEBproj/templates:/usr/share/nginx/html/templates
-      - ./pixplot/output:/usr/share/nginx/html/pixplot
+      - ./pixplot/output:/usr/share/nginx/html/pixplot/output
 

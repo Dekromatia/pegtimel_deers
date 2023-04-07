@@ -11,7 +11,7 @@ import json
 # from matplotlib import image
 # from matplotlib import pyplot as plt
 # import base64
-pixplot_url = os.environ.get('PIX_URL', 'http://localhost:4000')
+# pixplot_url = os.environ.get('PIX_URL', 'http://localhost:4000')
 flask_url = os.environ.get('FL_URL', 'http://localhost:5000')
 
 fileloader = FileSystemLoader('templates')
@@ -25,9 +25,9 @@ app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
 def homepage():
     return render_template("base.html") #добавить в скобки , result = result
 
-@app.route("/graph")
+@app.route("/pixplot")
 def graph():
-    result = redirect(pixplot_url)
+    result = redirect(PIX_URL)
     # result = redirect(f'http://127.0.0.1:4000')
     return result
 
